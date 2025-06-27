@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The Barbell Club - Transform Your Body</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">The Barbell Club</h1>
+            <!-- <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div> -->
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="homePage" class="page active">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Transform Your Body, Transform Your Life</h1>
+                <p class="hero-subtitle">Unlock your potential with professional gym training</p>
+                <button class="cta-button" onclick="showBodyPartsPage()">Let's Get Fit <span >&#129094;</span> </button>
+            </div>
+            <div class="hero-image">
+                <div class="bodybuilder-silhouette">
+                    <img src="images/JayCuttler.jpeg" height="90%" width="90%" alt="" srcset="" class="jaycuttler">
+                </div>
+            </div>
+        </div>
+
+        <section class="why-fitness">
+            <div class="container">
+                <h2>Why Stay Fit?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💪</div>
+                        <h3>Increased Strength</h3>
+                        <p>Build muscle mass and improve overall physical strength for daily activities</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">❤️</div>
+                        <h3>Better Health</h3>
+                        <p>Reduce risk of chronic diseases and improve cardiovascular health</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🧠</div>
+                        <h3>Mental Wellness</h3>
+                        <p>Boost mood, reduce stress, and improve cognitive function</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">⚡</div>
+                        <h3>More Energy</h3>
+                        <p>Increase stamina and endurance for better daily performance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-to-stay-fit">
+            <div class="container">
+                <h2>How to Stay Fit</h2>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Regular Exercise</h3>
+                        <p>Engage in consistent physical activity 4-6 times per week</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Balanced Nutrition</h3>
+                        <p>Fuel your body with proper macronutrients and stay hydrated</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Quality Sleep</h3>
+                        <p>Get 7-9 hours of quality sleep for recovery and growth</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Consistency</h3>
+                        <p>Stay committed to your routine and track your progress</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gym-benefits">
+            <div class="container">
+                <h2>How Gym Helps in Staying Fit</h2>
+                <div class="gym-advantages">
+                    <div class="advantage">
+                        <h3>Professional Equipment</h3>
+                        <p>Access to state-of-the-art machines and free weights for comprehensive training</p>
+                    </div>
+                    <div class="advantage">
+                        <h3>Structured Environment</h3>
+                        <p>Dedicated space that motivates you to focus on your fitness goals</p>
+                    </div>
+                    <div class="advantage">
+                        <h3>Professional guidance from certified trainers</h3>
+                        <p>Ensure proper form, equipment usage, and exercise effectiveness.</p>
+                    </div>
+                    <div class="advantage">
+                        <h3>Progressive Overload</h3>
+                        <p>Gradually increase resistance to continuously challenge your muscles</p>
+                    </div>
+                    <div class="advantage">
+                        <h3>Community Support</h3>
+                        <p>Train alongside like-minded individuals for motivation and accountability</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Body Parts Page -->
+    <div id="bodyPartsPage" class="page">
+        <div class="page-header">
+            <button class="back-button" onclick="showHomePage()">← Back</button>
+            <h1>Choose Your Target Muscle</h1>
+        </div>
+        
+        <div class="body-parts-grid">
+            <div class="body-part-card" onclick="showExercisePage('chest')">
+                <div class="body-part-image chest-icon">
+                    <img src="images/Screenshot 2025-06-27 161651.png" alt="" srcset="">
+                </div>
+                <h3>Chest</h3>
+                <p>Build a powerful upper body</p>
+            </div>
+            <div class="body-part-card" onclick="showExercisePage('back')">
+                <div class="body-part-image back-icon">
+                    <img src="images/Screenshot 2025-06-27 161838.png" alt="" srcset="">
+                </div>
+                <h3>Back</h3>
+                <p>Strengthen your posterior chain</p>
+            </div>
+            <div class="body-part-card" onclick="showExercisePage('shoulders')">
+                <div class="body-part-image shoulders-icon">
+                    <img src="images/Screenshot 2025-06-27 162311.png" alt="" srcset="">
+                </div>
+                <h3>Shoulders</h3>
+                <p>Develop broad, strong shoulders</p>
+            </div>
+            <div class="body-part-card" onclick="showExercisePage('biceps')">
+                <div class="body-part-image biceps-icon">
+                    <img src="images/Screenshot 2025-06-27 162947.png" alt="" srcset="">
+                </div>
+                <h3>Biceps</h3>
+                <p>Build impressive arm strength</p>
+            </div>
+            <div class="body-part-card" onclick="showExercisePage('triceps')">
+                <div class="body-part-image triceps-icon">
+                    <img src="images/Screenshot 2025-06-27 163403.png" alt="" srcset="">
+                </div>
+                <h3>Triceps</h3>
+                <p>Complete your arm development</p>
+            </div>
+            <div class="body-part-card" onclick="showExercisePage('legs')">
+                <div class="body-part-image legs-icon">
+                    <img src="images/Screenshot 2025-06-27 163716.png" alt="" srcset="">
+                </div>
+                <h3>Legs</h3>
+                <p>Power up your lower body</p>
+            </div>
+            <div class="body-part-card" onclick="showExercisePage('abs')">
+                <div class="body-part-image abs-icon">
+                    <img src="images/Screenshot 2025-06-27 163859.png" alt="" srcset="">
+                </div>
+                <h3>Abs</h3>
+                <p>Sculpt your core strength</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exercise Details Page -->
+    <div id="exercisePage" class="page">
+        <div class="page-header">
+            <button class="back-button" onclick="showBodyPartsPage()">← Back</button>
+            <h1 id="exercisePageTitle">Exercises</h1>
+        </div>
+        
+        <div id="exercisesList" class="exercises-container">
+            <!-- Exercise content will be dynamically loaded here -->
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+   
+</body>
+</html>
+
